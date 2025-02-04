@@ -8,13 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
-    var data: [Hystory]
+    var data: [History]
     
     var body: some View {
         NavigationView{
-            List{
-                ForEach(data){ hystory in
-                    RowView(hystory: hystory)
+            List{	
+                ForEach(data){ history in
+                    RowView(history: history)
+                }
+            }
+            .listStyle(PlainListStyle())
+            .navigationTitle("Expenses")
+            .toolbar{
+                ToolbarItem(placement: .navigationBarLeading) {
+                    EditButton()
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink("Add", destination: AddExpenseView())
                 }
             }
         }
@@ -22,5 +32,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(data: Hystory.testData)
+    ContentView(data: History.testData)
 }

@@ -9,15 +9,42 @@ import SwiftUI
 
 struct RowView: View {
     
-    let hystory: Hystory
+    let history: History
     
     var body: some View {
         HStack {
-            Text
+            Text(history.title)
+            Spacer()
+            Text(String(format: "%.2f €", history.value))
+            Text(history.priority.rawValue)
+                .font(.footnote)
+                .padding(3)
+                .foregroundStyle(
+                    colorForPriority(priority: history.priority.rawValue)
+                )
+                .frame(width:62)
+                .overlay(
+                    Capsule().stroke(colorForPriority(priority: history.priority.rawValue), lineWidth: 0.75)
+                )
+        }
+        .font(.title2)
+        .padding(.vertical, 10)
+    }
+    
+    private func colorForPriority(priority: String) -> Color {
+        switch priority {
+        case "Perso":
+            return Color(.systemRed)
+        case "Pro":
+            return Color(.systemGreen)
+        case "Vacation":
+            return Color(.systemYellow)
+        default:
+            return Color.primary
         }
     }
 }
 
 #Preview {
-    RowView()
+    RowView(history: History.testData[0])
 }

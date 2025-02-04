@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8192B3932D52088B009BDE4C /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8192B3922D52088B009BDE4C /* AddExpenseView.swift */; };
 		81DECD2A2D48CADF00BDD6C5 /* expenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DECD292D48CADF00BDD6C5 /* expenseApp.swift */; };
 		81DECD2C2D48CADF00BDD6C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DECD2B2D48CADF00BDD6C5 /* ContentView.swift */; };
 		81DECD2E2D48CAE000BDD6C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81DECD2D2D48CAE000BDD6C5 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8192B3922D52088B009BDE4C /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
 		81DECD262D48CADF00BDD6C5 /* expense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = expense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81DECD292D48CADF00BDD6C5 /* expenseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = expenseApp.swift; sourceTree = "<group>"; };
 		81DECD2B2D48CADF00BDD6C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				81DECD2B2D48CADF00BDD6C5 /* ContentView.swift */,
 				81DECD592D48D0F100BDD6C5 /* RowView.swift */,
+				8192B3922D52088B009BDE4C /* AddExpenseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			files = (
 				81DECD582D48CE1600BDD6C5 /* History.swift in Sources */,
 				81DECD2C2D48CADF00BDD6C5 /* ContentView.swift in Sources */,
+				8192B3932D52088B009BDE4C /* AddExpenseView.swift in Sources */,
 				81DECD2A2D48CADF00BDD6C5 /* expenseApp.swift in Sources */,
 				81DECD5A2D48D0F100BDD6C5 /* RowView.swift in Sources */,
 			);

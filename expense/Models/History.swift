@@ -7,16 +7,22 @@
 
 import Foundation
 
+enum Priority: String, CaseIterable {
+    case perso = "Perso"
+    case pro = "Pro"
+    case vacation = "Vacation"
+}
 
-struct Hystory: Identifiable {
+struct History: Identifiable {
     var id = UUID()
     var title: String
     var value: Double
-    var type: String
+    var priority: Priority
+    
     
     static var testData = [
-        Hystory(title: "Le bon de jb", value: 140.5, type: "Perso"),
-        Hystory(title: "Shaco", value: 150.0, type: "Professionnel"),
+        History(title: "Le bon de jb", value: 140.5, priority: .perso),
+        History(title: "Shaco", value: 150.0, priority: .pro),
         
     ]
 }

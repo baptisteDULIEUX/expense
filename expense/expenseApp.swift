@@ -11,7 +11,7 @@ import SwiftUI
 struct expenseApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(data: History.testData)
         }
     }
 }
